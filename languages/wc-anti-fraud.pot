@@ -1,0 +1,406 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WC Anti Fraud\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-04 22:28+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.1; wp-6.1.1\n"
+"X-Domain: wc-anti-fraud"
+
+#. a number of orders.
+#: includes/admin/class-wcaf-bulk-blacklist.php:124
+#, php-format
+msgid "%d order has been affected by bulk blacklisting."
+msgid_plural "%d orders have been affected by bulk blacklisting."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/class-wcaf-settings-tab.php:199
+msgid "Allow blacklist by Address ?"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:190
+msgid "Allow blacklist by Email wildcard ?"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:181
+msgid "Allow blacklist by Name ?"
+msgstr ""
+
+#: includes/admin/class-wcaf-fraud-attempts-table.php:190
+#: includes/admin/class-wcaf-logs-table.php:190
+msgid "Billing Address"
+msgstr ""
+
+#: includes/class-wcaf-blacklist-handler.php:364
+msgid "Billing Email"
+msgstr ""
+
+#: includes/class-wcaf-blacklist-handler.php:415
+msgid "Billing Email Wildcard match"
+msgstr ""
+
+#: includes/class-wcaf-blacklist-handler.php:390
+msgid "Billing Phone"
+msgstr ""
+
+#: includes/class-wcaf-blacklist-handler.php:490
+#: includes/class-wcaf-blacklist-handler.php:499
+#: includes/class-wcaf-blacklist-handler.php:516
+msgid "Billing/Shipping Address"
+msgstr ""
+
+#: includes/admin/class-wcaf-bulk-blacklist.php:37
+msgid "Blacklist Customer"
+msgstr ""
+
+#: includes/admin/class-wcaf-order-actions.php:73
+msgid "Blacklist order"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:266
+msgid "Blacklisted Billing/Shipping Addresses"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:115
+msgid "Blacklisted Customers"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:250
+msgid "Blacklisted Email Domains."
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:242
+msgid "Blacklisted Emails"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:258
+msgid "Blacklisted IP Addresses"
+msgstr ""
+
+#: includes/class-wc-anti-fraud.php:221
+msgid "Blacklisted Log records."
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:226
+msgid "Blacklisted Names"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:161
+msgid "Blacklisted Order Statuses"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:234
+msgid "Blacklisted Phones"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:171
+msgid "Blacklisted Product Types"
+msgstr ""
+
+#: includes/admin/class-wcaf-logs-table.php:192
+msgid "Blacklisted Reason"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:121
+msgid "Blacklists Notice Message"
+msgstr ""
+
+#: includes/class-wc-anti-fraud.php:203
+msgid "Blocked Logs"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:194
+msgid "Check this to blacklist customer by email wildcard."
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:203
+msgid ""
+"Check this to blacklist customer by their address. Only enabling this will "
+"auto fill the \"Blacklisted Address\" setting option below."
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:185
+msgid ""
+"Check this to blacklist customer by their name. Only enabling this will auto "
+"fill the \"blacklisted Names\" setting option below."
+msgstr ""
+
+#: includes/admin/class-wcaf-order-metabox.php:67
+msgid "Check this to bypass this order payment from blacklisting."
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:221
+msgid ""
+"Check this to enable the DB log. On checking this, Everytime customer "
+"encounters the \"blocked\" message, It will log the details to the DB table. "
+"It can be viewed WooCommerce>Anti Fraud Logs. "
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:212
+msgid ""
+"Check this to enable the debug log. On checking this, Everytime customer "
+"encounters the \"blocked\" message, It will dump details at path /wp-"
+"content/uploads/wcaf-logs/ . "
+msgstr ""
+
+#: includes/admin/class-wcaf-fraud-attempts-table.php:193
+#: includes/admin/class-wcaf-logs-table.php:193
+msgid "Date"
+msgstr ""
+
+#: includes/admin/class-wcaf-fraud-attempts-table.php:108
+#: includes/admin/class-wcaf-fraud-attempts-table.php:122
+#: includes/admin/class-wcaf-logs-table.php:108
+#: includes/admin/class-wcaf-logs-table.php:122
+msgid "Delete"
+msgstr ""
+
+#: includes/admin/class-wcaf-fraud-attempts-table.php:189
+#: includes/admin/class-wcaf-logs-table.php:189
+msgid "Email"
+msgstr ""
+
+#: includes/class-wcaf-blacklist-handler.php:378
+msgid "Email Domain"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:217
+msgid "Enable DB log"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:208
+msgid "Enable debug log"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:229
+msgid "Enter combined first name and last name in new line. Eg. \"John Doe\""
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:253
+msgid "Enter email domain in new line. Example \"mailnator.com\""
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:245
+msgid ""
+"Enter Emails in new line. You can enter the wildcard entry without an "
+"asterisk (*). Eg. If you put \"john\", It will block orders from every email "
+"containing the string \"john\", john@gmail.com, john@yahoo.com, "
+"johndoe@anyhting.com, avfjohndev@anything.com and so on."
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:261
+msgid "Enter IPs in new line"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:269
+msgid ""
+"Enter one address per line, with each line of the address itself separated "
+"by a comma. Partial addresses can be used, e.g. \"Springfield, US\" will "
+"block every order in every town named Springfield in the US; \"90210\" will "
+"block all orders to that zip code. And Wildcard must be in the format of "
+"\"%address%\"; enclosed by \"%\". For example; If you put the "
+"\"%Springfield%\" as a wildcard rule for address, It will block the order if "
+"there is any match of \"Springfield\" within any of customer's "
+"address(Street address, address line 2, city etc.)."
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:237
+msgid "Enter Phones in new line"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:125
+msgid "Enter the message to be shown for blocked customers"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:134
+msgid ""
+"Enter the number of allowed fraud attempts before blocking automatically. It "
+"counts increases only if order status changes to failed on order placement."
+msgstr ""
+
+#: includes/class-wc-anti-fraud.php:241
+msgid ""
+"Every time there is failed order creation, the customer details will be "
+"recorded here."
+msgstr ""
+
+#: includes/class-wc-anti-fraud.php:206
+msgid "Fraud Attempt Logs"
+msgstr ""
+
+#: includes/class-wc-anti-fraud.php:240
+msgid "Fraud Order Attempts Log Records."
+msgstr ""
+
+#: includes/class-wcaf-blacklist-handler.php:338
+#: includes/admin/class-wcaf-fraud-attempts-table.php:186
+#: includes/admin/class-wcaf-logs-table.php:186
+msgid "Full Name"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://matejzlatic.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://matejzlatic.com"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:178
+msgid ""
+"If selected, customer will be blocked only if they have product of at least "
+"one selected product types in the cart."
+msgstr ""
+
+#: includes/admin/class-wcaf-fraud-attempts-table.php:188
+#: includes/admin/class-wcaf-logs-table.php:188
+msgid "IP"
+msgstr ""
+
+#: includes/class-wcaf-blacklist-handler.php:351
+msgid "IP Address"
+msgstr ""
+
+#: includes/class-wc-anti-fraud.php:160
+msgid "Logs"
+msgstr ""
+
+#: includes/class-wcaf-blacklist-handler.php:132
+msgid "Max Fraud Attempts exceeded"
+msgstr ""
+
+#: includes/admin/class-wcaf-fraud-attempts-table.php:29
+msgid "No fraud attempts records available."
+msgstr ""
+
+#: includes/admin/class-wcaf-logs-table.php:29
+msgid "No Log records available."
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:130
+msgid "Number of allowed Fraud Attempts"
+msgstr ""
+
+#: includes/class-wcaf-blacklist-handler.php:182
+msgid "Order details blacklisted for future checkout."
+msgstr ""
+
+#: includes/class-wcaf-blacklist-handler.php:178
+msgid "Order details removed from blacklist."
+msgstr ""
+
+#: includes/class-wcaf-track-fraud-attempts.php:320
+msgid "Order Status"
+msgstr ""
+
+#: includes/admin/class-wcaf-fraud-attempts-table.php:192
+msgid "Payment Method"
+msgstr ""
+
+#: includes/admin/class-wcaf-fraud-attempts-table.php:187
+#: includes/admin/class-wcaf-logs-table.php:187
+msgid "Phone"
+msgstr ""
+
+#. Author of the plugin
+msgid "Matej Zlatic"
+msgstr ""
+
+#: includes/admin/class-wcaf-order-actions.php:77
+msgid "Remove from Blacklist"
+msgstr ""
+
+#: includes/class-wc-anti-fraud.php:159
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/class-wcaf-fraud-attempts-table.php:191
+#: includes/admin/class-wcaf-logs-table.php:191
+msgid "Shipping Address"
+msgstr ""
+
+#: includes/class-wcaf-blacklist-handler.php:138
+#: includes/class-wcaf-blacklist-handler.php:201
+#: includes/admin/class-wcaf-settings-tab.php:124
+msgid "Sorry, You are being restricted from placing orders."
+msgstr ""
+
+#: includes/class-wc-anti-fraud.php:222
+msgid ""
+"This is not the blacklisted customer details. Rather,  It is the list of "
+"customers who could not manage to place an order due to blacklisting."
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:140
+msgid ""
+"This will block customers from placing an order if they try more than the "
+"specified number of attempts and the order still fails. Legitimate reasons "
+"for an order failing could be entering wrong credit card number or address "
+"verification mismatch. If the customer continues to try to complete the "
+"order, the order will be blocked and notice message sent after the specified "
+"number of retries."
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:153
+msgid "Whitelisted Customers"
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:143
+msgid "Whitelisted Payment Gateways"
+msgstr ""
+
+#: includes/class-wc-anti-fraud.php:201
+#: includes/admin/class-wcaf-settings-tab.php:41
+#: includes/admin/class-wcaf-order-metabox.php:48
+msgid "Anti Fraud"
+msgstr ""
+
+#. Name of the plugin
+msgid "WC Anti Fraud"
+msgstr ""
+
+#: includes/class-wc-anti-fraud.php:124
+#, php-format
+msgid "WC Anti Fraud depends on %s to work!"
+msgstr ""
+
+#: includes/class-wc-anti-fraud.php:124
+msgid "WooCommerce"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Advanced fraud detection and order management for WooCommerce."
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:156
+msgid ""
+"You can select multiple customers (by User ID or by User Email). New entry "
+"should be in new line. Whitelist has more priority than blacklists."
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:165
+msgid ""
+"You can select multiple order statuses.If customer has previous order in one "
+"of above selected order items, He/She will not be able to place order."
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:147
+msgid ""
+"You can select multiple payment gateways. Whitelist more priority than "
+"blacklists."
+msgstr ""
+
+#: includes/admin/class-wcaf-settings-tab.php:175
+msgid "You can select multiple product types."
+msgstr ""
