@@ -34,9 +34,8 @@ add_action( 'before_woocommerce_init', function() {
 	if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) &&
 	     defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '8.2', '>=' ) ) {
 		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
-		error_log( 'WCAF: HPOS compatibility declared for WooCommerce ' . WC_VERSION );
 	} else {
-		error_log( 'WCAF: HPOS compatibility not declared - WooCommerce version too old or FeaturesUtil not available' );
+		// HPOS compatibility not declared - WooCommerce version too old or FeaturesUtil not available
 	}
 } );
 

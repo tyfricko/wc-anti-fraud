@@ -118,6 +118,7 @@ Yes. The plugin supports comprehensive whitelisting features. You can whitelist 
 
 = 2.9.1 =
 * Enhancement: Removed debug messages that were flooding error logs
+* Enhancement: Removed HPOS compatibility informational messages from logs
 * Enhancement: Cleaned up initialization code for better performance
 * Enhancement: Code cleanup for production readiness
 

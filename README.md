@@ -132,6 +132,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full details. Key updates since fork (v2.7.
 
 ### 2.9.1 (Latest)
 - Removed debug messages that were flooding error logs.
+- Removed HPOS compatibility informational messages from logs.
 - Cleaned up initialization code for better performance.
 - Code cleanup for production.
 
