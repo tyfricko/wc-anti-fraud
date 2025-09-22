@@ -3,7 +3,7 @@
  * Plugin Name:  WC Anti Fraud
  * Plugin URI:   https://matejzlatic.com
  * Description:  Advanced fraud detection and order management for WooCommerce.
- * Version:           2.9.0
+ * Version:           2.9.1
  * Author:       Matej Zlatic
  * Author URI:   https://matejzlatic.com
  * License:      GPLv2
@@ -53,7 +53,6 @@ require_once dirname( __FILE__ ) . '/includes/models/class-wcaf-migration-handle
 
 // Initialize the plugin after WooCommerce is loaded
 add_action( 'woocommerce_loaded', function() {
-	error_log( 'WCAF Debug: Main plugin - woocommerce_loaded hook fired' );
 	$instance = WC_Anti_Fraud::instance();
 	if ( $instance ) {
 		$instance->initialize_fraud_tracking();
@@ -62,19 +61,25 @@ add_action( 'woocommerce_loaded', function() {
 
 // Fallback initialization if WooCommerce is already loaded
 if ( did_action( 'woocommerce_loaded' ) ) {
-	error_log( 'WCAF Debug: Main plugin - WooCommerce already loaded, initializing immediately' );
-	$instance = WC_Anti_Fraud::instance();
-	if ( $instance ) {
-		$instance->initialize_fraud_tracking();
+	static $fallback_initialized = false;
+	if ( ! $fallback_initialized ) {
+		$instance = WC_Anti_Fraud::instance();
+		if ( $instance ) {
+			$instance->initialize_fraud_tracking();
+		}
+		$fallback_initialized = true;
 	}
 } elseif ( ! function_exists( 'is_plugin_active' ) ) {
 	// If we're in activation context, initialize immediately
 	require_once ABSPATH . 'wp-admin/includes/plugin.php';
 	if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
-		error_log( 'WCAF Debug: Main plugin - WooCommerce active, initializing immediately' );
-		$instance = WC_Anti_Fraud::instance();
-		if ( $instance ) {
-			$instance->initialize_fraud_tracking();
+		static $activation_initialized = false;
+		if ( ! $activation_initialized ) {
+			$instance = WC_Anti_Fraud::instance();
+			if ( $instance ) {
+				$instance->initialize_fraud_tracking();
+			}
+			$activation_initialized = true;
 		}
 	}
 }
@@ -83,10 +88,8 @@ if ( did_action( 'woocommerce_loaded' ) ) {
 add_action( 'init', function() {
 	static $initialized = false;
 	if ( ! $initialized && class_exists( 'WooCommerce' ) && defined( 'WC_VERSION' ) ) {
-		error_log( 'WCAF Debug: Main plugin - init hook with WooCommerce available, initializing' );
 		$instance = WC_Anti_Fraud::instance();
 		if ( $instance && did_action( 'woocommerce_loaded' ) ) {
-			error_log( 'WCAF Debug: WooCommerce already loaded, calling initialize_fraud_tracking directly' );
 			$instance->initialize_fraud_tracking();
 		}
 		$initialized = true;

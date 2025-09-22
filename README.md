@@ -130,7 +130,12 @@ If issues persist, open a [GitHub Issue](https://github.com/tyfricko/wc-anti-fra
 
 See [CHANGELOG.md](CHANGELOG.md) for full details. Key updates since fork (v2.7.0+):
 
-### 2.9.0 (Latest)
+### 2.9.1 (Latest)
+- Removed debug messages that were flooding error logs.
+- Cleaned up initialization code for better performance.
+- Code cleanup for production.
+
+### 2.9.0
 - Added Store API hooks for WC 10+ blocks compatibility.
 - Fixed blacklist in blocks checkout.
 - Code cleanup for production.

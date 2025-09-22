@@ -3,7 +3,7 @@ Contributors: matejzlatic
 Tags: Blacklist customers, Anti Fraud orders, Tracking fraud attempts, Prevent fake orders, Blacklist fraud customers, HPOS, High-Performance Order Storage, WooCommerce Blocks
 Requires at least: 5.0
 Tested up to: 6.6
-Stable tag: 2.9.0
+Stable tag: 2.9.1
 Requires PHP: 7.4
 WC requires at least: 8.2
 WC tested up to: 10.1
@@ -115,6 +115,11 @@ Yes. The plugin supports comprehensive whitelisting features. You can whitelist 
 == Changelog ==
 
 **Note**: This changelog covers updates from version 2.7.0 onward in the WC Anti Fraud fork. For the complete history of the original Woo Manage Fraud Orders plugin (versions 1.0.0 - 2.6.x), see the <a href="https://wordpress.org/plugins/woo-manage-fraud-orders/" target="_blank">original plugin page on WordPress.org</a>.
+
+= 2.9.1 =
+* Enhancement: Removed debug messages that were flooding error logs
+* Enhancement: Cleaned up initialization code for better performance
+* Enhancement: Code cleanup for production readiness
 
 = 2.9.0 =
 * Enhancement: Added Store API hooks for WooCommerce 10+ blocks checkout compatibility

@@ -23,7 +23,7 @@ if ( ! class_exists( 'WC_Anti_Fraud' ) ) {
 		 *
 		 * @var string $version
 		 */
-		public $version = '2.9.0';
+		public $version = '2.9.1';
 
 		/**
 		 * Store the class singleton.
